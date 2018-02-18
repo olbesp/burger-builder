@@ -1,0 +1,10 @@
+.BurgerBuilder {
+  display: flex;
+  flex-flow: column;
+}
+
+@media (min-width: 800px) {
+  .BurgerBuilder {
+    flex-flow: row;
+  }
+}
