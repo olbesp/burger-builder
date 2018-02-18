@@ -1,0 +1,33 @@
+.OrderSummary {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.OrderSummary h3 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.OrderSummary div {
+  width: 50%;
+  text-align: center;
+}
+
+.OrderSummary ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-height: 420px) {
+  .OrderSummary > div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 420px) {
+  .OrderSummary {
+    font-size: 1rem;
+  }
+}
