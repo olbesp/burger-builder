@@ -1,6 +1,9 @@
 .BurgerBuilder {
   display: flex;
   flex-flow: column;
+  background-size: cover;
+  background-position: top;
+  color: white;
 }
 
 @media (min-width: 800px) {

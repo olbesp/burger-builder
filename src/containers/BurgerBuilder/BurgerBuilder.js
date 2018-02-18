@@ -5,6 +5,7 @@ import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
+import BackgroundImage from '../../assets/images/burger-background.jpeg';
 
 const INGREDIENT_PRICES = {
   salad: 0.5,
@@ -102,7 +103,8 @@ class BurgerBuilder extends Component {
       disabledInfo[key] = disabledInfo[key] <= 0
     }
     return (
-      <div className={classes.BurgerBuilder}>
+      <div className={classes.BurgerBuilder} 
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(15, 63, 37, 0.8)), url(${BackgroundImage})` }}>
         <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
           <OrderSummary 
             ingredients={this.state.ingredients}
