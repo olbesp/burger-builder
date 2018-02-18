@@ -1,7 +1,7 @@
 .OrderSummary {
   display: flex;
   flex-wrap: wrap;
-  font-size: 12px;
+  font-family: 'Nanum Pen Script', cursive;
   padding: 16px;
   background-color: #fff; 
   background-image: 
@@ -34,6 +34,6 @@
 
 @media (min-width: 400px) and (min-height: 400px) {
   .OrderSummary {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
