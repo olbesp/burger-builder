@@ -5,6 +5,7 @@
   border-radius: 0 0 30px 30px;
   box-shadow: inset -15px 0 #c15711;
   margin: .5% auto;
+  border: 2px solid #58280a;
 }
 
 .BreadTop {
@@ -15,6 +16,7 @@
   box-shadow: inset -15px 0 #c15711;
   margin: .5% auto;
   position: relative;
+  border: 2px solid #58280a;
 }
 
 .Seeds1 {
@@ -81,49 +83,51 @@
 }
   
 .Tomato {
-  width: 75%;
+  width: 70%;
   height: 4%;
-  background: #d41313;
+  background: linear-gradient(#a31d05, #e93a1b);
+  border: 2px solid #691515;
   margin: .5% auto;
 }
 
 .Pickles {
   display: flex;
   width: 75%;
-  height: 1%;
+  height: 2%;
   margin: .5% auto;
   justify-content: space-around;
 }
 
 .Pickle {
   width: 30%;
-  
-  background: #082906;
+  border: 2px solid #043300;
+  background: #11530d;
 }
 
 .Onion {
-  width: 75%;
+  width: 65%;
   height: 2%;
   background: #e0e0e0;
   margin: .5% auto;
-  border: 1px solid #d1ab7a;
+  border: 2px solid #8a6f4c;
 }
 
 .Chicken {
   width: 80%;
-  height: 8%;
+  height: 10%;
   background: linear-gradient(#f3d06f, #e7d298);
   margin: .5% auto;
   border-radius: 15px;
-  border: 1px solid #cca655;
+  border: 2px solid #91540f;
 }
 
 .Meat {
   width: 80%;
-  height: 8%;
+  height: 10%;
   background: linear-gradient(#7f3608, #702e05);
   margin: .5% auto;
   border-radius: 15px;
+  border: 2px solid #220d01;
 }
 
 .Cheese {
@@ -132,14 +136,16 @@
   margin: .5% auto;
   background: linear-gradient(#f4d004, #d6bb22);
   border-radius: 20px;
+  border: 2px solid #bd7304;
 }
 
 .Salad {
   width: 85%;
-  height: 2%;
+  height: 5%;
   margin: .5% auto;
   background: linear-gradient(#228c1d, #91ce50);
   border-radius: 20px;
+  border: 2px solid #0d3d02;
 }
 
 .Bacon {
@@ -147,4 +153,5 @@
   height: 3%;
   background: linear-gradient(#bf3813, #c45e38);
   margin: .5% auto;
+  border: 2px solid #41220e;
 }
