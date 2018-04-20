@@ -1,26 +1,21 @@
 .BuildControl {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
 }
 
 .BuildControl button {
-  display: block;
-  font-family: inherit;
-  font-size: 12px;
-  padding: 5px; 
-  margin: 0 5px;
-  width: 80px;
-  border: 1px solid #aa6817;
-  cursor: pointer;
-  outline: none;
+    display: block;
+    font: inherit;
+    padding: 5px;
+    margin: 0 5px;
+    width: 80px;
+    border: 1px solid #AA6817;
+    cursor: pointer;
+    outline: none;
 }
 
-@media (min-height: 420px) {
-  .BuildControl button {
-    font-size: 1rem;
-  }
-}
 
 .BuildControl button:disabled {
     background-color: #AC9980;
