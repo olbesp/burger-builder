@@ -5,9 +5,10 @@ export const authStart = () => ({
   type: actionTypes.AUTH_START
 });
 
-export const authSuccess = authData => ({
+export const authSuccess = (token, userID) => ({
   type: actionTypes.AUTH_SUCCESS,
-  authData
+  token,
+  userID
 });
 
 export const authFail = error => ({
@@ -23,13 +24,15 @@ export const auth = (email, password, isSignup) => dispatch => {
     returnSecureToken: true
   };
   let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyD3Cj_jyAuY58UUtTsiC5aE5LwCjNwC3jo';
+  
   if (!isSignup) {
     url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyD3Cj_jyAuY58UUtTsiC5aE5LwCjNwC3jo'
   }
+
   axios.post(url, authData)
     .then(response => {
       console.log(response);
-      dispatch(authSuccess(response.data));
+      dispatch(authSuccess(response.data.idToken, response.data.localId));
     })
     .catch(error => {
       console.log(error);
